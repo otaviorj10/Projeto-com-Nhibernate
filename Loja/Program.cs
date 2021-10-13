@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Loja.Infra;
+using System;
 
 namespace Loja
 {
@@ -6,7 +7,9 @@ namespace Loja
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            NHibernateHelper.GeraSchema();
+            Console.Read();
         }
     }
 }
